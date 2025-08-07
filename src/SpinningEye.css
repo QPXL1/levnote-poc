@@ -1,0 +1,46 @@
+.eye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 30%;
+  background-color: black;
+  position: relative;
+  animation: spin 20s linear infinite;
+}
+
+.ring {
+  position: absolute;
+  top: calc(50% - 45px);
+  left: calc(50% - 45px);
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 10px solid red;
+  box-sizing: border-box;
+  animation: spin-ring 10s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-ring {
+  0% {
+    transform: translate(0, -40px) rotate(0deg);
+  }
+  100% {
+    transform: translate(0, -40px) rotate(360deg);
+  }
+}

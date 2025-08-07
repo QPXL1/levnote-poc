@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+button {
+  font-size: 1rem;
+  padding: 8px 12px;
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 8px 0;
+}
+
+button:hover {
+  background-color: #2a75d1;
+}
+
+/* Add this to your CSS */
+.map-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content-container {
+  text-align: center;
+  max-width: 400px;
+  padding: 24px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+}
+
+.signed-in-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure the container is above the map */
+}
+
+
+.welcome-text-container {
+  position: absolute;
+  top: 60px; /* Adjust this value based on the height of your nav bar */
+  left: 10px;
+  z-index: 1;
+}

@@ -1,0 +1,34 @@
+.post-it-note {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: #f8e38d;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.post-it-note textarea {
+  flex-grow: 1;
+  resize: none;
+  background-color: #f8e38d;
+  border: none;
+  outline: none;
+  overflow: auto;
+}
+
+.post-it-note button {
+  margin-top: 5px;
+}
+
+.discard-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+  padding: 2px;
+  border: none;
+  background-color: transparent;
+}
