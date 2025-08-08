@@ -12,14 +12,15 @@ import useUser from './useUser';
 import useNotes from './useNotes';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD_HvgITHDKkY5J_ShKtATnS42KRCbJx08",
-  authDomain: "levanote.firebaseapp.com",
-  projectId: "levanote",
-  storageBucket: "levanote.appspot.com",
-  messagingSenderId: "73304210165",
-  appId: "1:73304210165:web:6e26d20af02ea9c33923bc",
-  measurementId: "G-6Q7LN8DYHD"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID,
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
+
 
 initializeApp(firebaseConfig);
 
